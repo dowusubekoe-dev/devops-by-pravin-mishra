@@ -85,7 +85,7 @@ Question Template:
 
 **Root Cause Suspected:**
 
-What do you think might be causing the issue? (Even if unsure, share your thoughts) 
+What do you think might be causing the issue? (Even if unsure, share your thoughts)
 
 Looking forward to your help.
 
