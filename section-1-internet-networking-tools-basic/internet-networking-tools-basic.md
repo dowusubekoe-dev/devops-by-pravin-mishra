@@ -99,8 +99,6 @@ For example:
     - Get IP address from an `**alternative server**` if the ip address can not be found in TLD.
     - Connects to the websites
 
-
-
 ### DNS Record Types
 
 - `**A Record**`: Maps a domain name to an IPv4 address.
