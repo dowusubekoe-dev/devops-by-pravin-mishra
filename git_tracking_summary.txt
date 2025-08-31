@@ -1,0 +1,14 @@
+Git Commands
+================
+
+git init – Creates a new Git repository in your folder. Think of it as turning on “version tracking” for that project.
+
+git status – Shows what’s going on. You’ll see which files are new, changed, or already staged for commit.
+
+git add . – Moves all changed files into the “staging area,” which means they’re ready to be saved in the next snapshot.
+
+git commit -m "message" – Saves a snapshot of your project with a short note (the message) describing what you changed.
+
+git log – Lists all commits in detail (who made them, when, and the commit message).
+
+git log --oneline – A shorter version of git log that shows each commit as a single line, which is easier to scan quickly.
