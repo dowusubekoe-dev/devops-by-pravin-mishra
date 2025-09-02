@@ -1,18 +1,90 @@
-# This .gitignore is appropriate for repositories deployed to GitHub Pages and using
-# a Gemfile as specified at https://github.com/github/pages-gem#conventional
+# -------------------------
+# OS / Editor
+# -------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
 
-# Basic Jekyll gitignores (synchronize to Jekyll.gitignore)
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+# IDEs
+.vscode/
+.idea/
+*.iml
 
-# Additional Ruby/bundler ignore for when you run: bundle install
-/vendor
+# -------------------------
+# Node.js / Python / Java
+# -------------------------
+node_modules/
+npm-debug.log*
+yarn-error.log*
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+env/
+venv/
+*.class
+*.jar
+*.war
+*.ear
+target/
 
-# Specific ignore for GitHub Pages
-# GitHub Pages will always use its own deployed version of pages-gem 
-# This means GitHub Pages will NOT use your Gemfile.lock and therefore it is
-# counterproductive to check this file into the repository.
-# Details at https://github.com/github/pages-gem/issues/768
-Gemfile.lock
+# -------------------------
+# Terraform (multi-cloud)
+# -------------------------
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+*.tfvars.json
+crash.log
+.terraform.lock.hcl  # optional: ignore if you want CI to regenerate lock file
+
+# -------------------------
+# CloudFormation / ARM / Deployment Templates
+# -------------------------
+*.template
+*.yaml.json
+*.json  # only ignore sensitive JSON (like GCP keys); track deployment templates
+
+# -------------------------
+# Docker
+# -------------------------
+docker-compose.override.yml
+Dockerfile.*   # ignore local variants
+*.env.docker   # ignore env files for Docker
+
+# -------------------------
+# Cloud Credentials (never commit)
+# -------------------------
+# AWS
+.aws/
+credentials
+config
+*.pem
+*.key
+
+# GCP
+.gcloud/
+*.json   # service account keys
+
+# Azure
+*.azure/
+*.publishsettings
+.env.azure
+*.azurecredentials
+
+# -------------------------
+# Logs
+# -------------------------
+*.log
+
+# -------------------------
+# Misc / CI/CD
+# -------------------------
+.env
+*.secret
+mini_finance
+
