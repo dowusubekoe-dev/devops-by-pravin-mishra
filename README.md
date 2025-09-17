@@ -5,3 +5,5 @@
 ## [Section 2: Linux for DevOps](/section-2-linux-for-devops/)
 
 ## [Section 3: Git and GitHub](/section-3-git-and-github/)
+
+## [Section 4: DevOps Lifecycle](/section-4-devops-lifecycle/)
