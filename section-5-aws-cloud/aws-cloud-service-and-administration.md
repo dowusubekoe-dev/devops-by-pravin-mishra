@@ -118,7 +118,18 @@ AWS has a global infrastructure that consists of Regions and Availability Zones 
 1; **AWS Regions**
 Regions are separate geographic areas that AWS uses to house its data centers.
 Each region is completely independent and isolated from other regions.
+Region consist of multiple Availability zones.
 
 2; **Availability Zones (AZs)**
 AZs are isolated locations within a region that are designed to be independent of failures in other AZs.
 Each region consists of multiple AZs to provide high availability and fault tolerance.
+An AWS region must have two Availability Zones.
+
+### Why the need for many regions
+
+- Latency
+- Compliance
+- Disaster recovery
+- Global applications
+- Cost
+- Reduced blast radius
