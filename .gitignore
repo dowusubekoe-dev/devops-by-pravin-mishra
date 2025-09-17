@@ -86,5 +86,5 @@ config
 # -------------------------
 .env
 *.secret
+support-documents
 mini_finance
-

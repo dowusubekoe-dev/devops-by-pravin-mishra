@@ -64,3 +64,24 @@ Git init initializes a local Git repository in your current project directory by
 `**Q6: What does a pull request (PR) in GitHub represent?**`
 
 A Pull Request (PR) in GitHub is a way to propose changes to a codebase. It allows developers to notify team members about changes they want to merge into the main project. PRs facilitate code review, discussion, and collaboration before the changes are integrated.
+
+## An interactive terminal quiz that simulates actual interview pressure
+
+Run it now
+For most people:
+
+```
+"docker run -it --rm moabukar/devops-interview-prep practice"
+```
+
+If you’re on Apple Silicon (M1-M4) or ARM servers (Graviton/Raspberry Pi):
+
+```
+"docker run --platform linux/arm64 -it --rm moabukar/devops-interview-prep practice"
+```
+
+If you’re on Intel (Linux/Windows/Mac):
+
+```
+"docker run --platform linux/amd64 -it --rm moabukar/devops-interview-prep practice"
+```
