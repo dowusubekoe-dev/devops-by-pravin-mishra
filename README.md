@@ -7,3 +7,5 @@
 ## [Section 3: Git and GitHub](/section-3-git-and-github/)
 
 ## [Section 4: DevOps Lifecycle](/section-4-devops-lifecycle/)
+
+## [Section 5: AWS Cloud](/section-5-aws-cloud/)
