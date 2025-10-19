@@ -88,3 +88,5 @@ config
 *.secret
 support-documents
 mini_finance
+*.zip
+*.tar.gz
