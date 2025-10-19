@@ -1,0 +1,44 @@
+# git_tracking_summary.txt
+
+1. git config --global url."git@github.com:".insteadOf "https://github.com/"
+   → This makes Git always use SSH instead of HTTPS when working with GitHub.
+
+2. git clone git@github.com:CHace-git/mini_finance.git
+   → Cloned my fork of the repository from GitHub to my local machine.
+
+3. cd mini_finance
+   → Moved into the project directory after cloning.
+
+4. git remote -v
+   → Displayed all remotes linked to my local repository. "origin" pointed to my fork.
+
+5. git remote add upstream https://github.com/pravinmishraaws/mini_finance.git
+   → Added the original repository as "upstream" so I can fetch new changes from it later.
+
+6. git checkout -b feature-readme-update
+   → Created and switched to a new branch for my updates.
+
+7. git add README.md
+   → Staged the modified README file for commit.
+
+8. git commit -m "docs: update README with assignment note"
+   → Saved my staged changes with a descriptive commit message.
+
+9. git fetch upstream
+   → Downloaded the latest changes from the upstream repository without merging.
+
+10. git checkout main
+    → Switched to the main branch to sync it with upstream.
+
+11. git merge upstream/main
+    → Merged changes from the original repository’s main branch into my local main branch.
+
+12. git checkout feature-readme-update
+    → Switched back to my feature branch.
+
+13. git rebase main
+    → Rebasing ensured my feature branch was up-to-date with main before pushing.
+
+14. git push -u origin feature-readme-update
+    → Pushed my feature branch to my fork on GitHub and set up tracking.
+
