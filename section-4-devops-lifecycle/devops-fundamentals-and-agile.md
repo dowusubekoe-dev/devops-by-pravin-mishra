@@ -284,6 +284,3 @@ The introduction of the **Scrum Framework** improved collaboration but not the a
 5. **Repetitive** and **Tedious**
 6. **Difficult** Testing
 7. Challenges with **Auditing**
-
-
-
