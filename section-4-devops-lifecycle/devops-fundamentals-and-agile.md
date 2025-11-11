@@ -163,12 +163,13 @@ DevOps is a set of practices that combines software development (Dev) and IT ope
 1. Collaboration and Communication
 2. Automation and Scripting
 
-Task                    AWS Service         Non-AWS Tool
-Source Code Tool        AWS CodeCommit      Git, GitHub, GitLab
-Build & Test            AWS CodeBuild       Jenkins
-Deploy                  AWS CodeDeploy      Jenkins, Ansible, Kubernetes, Chef, Puppet, Docker
-Monitor & Feedback      Amazon CloudWatch   Nagios, Splunk, ELK Stack
-Automate Pipeline       AWS CodePipeline    Jenkins, Travis CI, GitLab
+| Task                | AWS Service         | Non-AWS Tool                                       |
+|---------------------|---------------------|----------------------------------------------------|
+| Source Code Tool    | AWS CodeCommit      | Git, GitHub, GitLab                                |
+| Build & Test        | AWS CodeBuild       | Jenkins                                            |
+| Deploy              | AWS CodeDeploy      | Jenkins, Ansible, Kubernetes, Chef, Puppet, Docker |
+| Monitor & Feedback  | Amazon CloudWatch   | Nagios, Splunk, ELK Stack                          |
+| Automate Pipeline   | AWS CodePipeline    | Jenkins, Travis CI, GitLab                         |
 
 ## Introduction to Jira
 
