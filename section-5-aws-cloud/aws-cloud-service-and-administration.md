@@ -232,8 +232,9 @@ Benefits of Static Website Hosting include **Scalability**, **High Availability*
     ]
 }
 ```
+
 - Save the changes and try accesss the **website endpoint** in the browser.
 
 ## Amazon EBS (Elastic Block Storage)
 
-Amazon EBS provides persistent block storage for Amazon EC2
+Amazon EBS provides persistent block storage for Amazon EC2 instance. **Block Storage** is a technology that chops data into blocks and stores them as separate pieces. **EBS Volume** is a network-attached drive. EBS volumes can **only be attached to one EC2 instance at a time**. EBS volumes are restricted within one **Availability Zone**.
