@@ -238,3 +238,7 @@ Benefits of Static Website Hosting include **Scalability**, **High Availability*
 ## Amazon EBS (Elastic Block Storage)
 
 Amazon EBS provides persistent block storage for Amazon EC2 instance. **Block Storage** is a technology that chops data into blocks and stores them as separate pieces. **EBS Volume** is a network-attached drive. EBS volumes can **only be attached to one EC2 instance at a time**. EBS volumes are restricted within one **Availability Zone**.
+
+## Virtual Private Cloud (VPC)
+
+Amazon VPC enables you to launch AWS resources into a virtual network that you've defined. This virtual network closely resembles a traditional network that you do operate in your own data center, with the benefits of using the scalable infrastructure of AWS. **VPC** is an isolated logical network. When a **VPC** is created, a set of ip addresses (**CIDR**) block are also created.
