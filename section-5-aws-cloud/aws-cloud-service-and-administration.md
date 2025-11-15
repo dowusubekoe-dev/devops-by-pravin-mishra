@@ -231,7 +231,7 @@ A **VPC** is an isolated logical network with its own **CIDR block** and spans m
 
 A **Subnet** is a range of IP addresses in your VPC.
 
-1. **Public Subnet:** Has a route to an Internet Gateway.
+1. **Public Subnet:** Has a route to an Internet Gateway. It has a routing table entry to the internet
 2. **Private Subnet:** No direct internet route.
 
 ### Internet Gateway
@@ -246,3 +246,26 @@ Each subnet must be associated with a route table.
 ### NAT Gateway
 
 A **NAT Gateway** allows instances in private subnets to connect to the internet while preventing inbound connections from the internet.
+
+### Security Group & NACL
+
+A **Security Group** acts as a virtual firewall for your instance to control inbound and outbound traffic. It represents instance-level security and both inbound/outbound rules work independently. An instance can be associated with one or more security groups.
+
+A **Network Access Control List (NACL)** is an optional layer of security for your VPC that acts as a firewall for controlling traffic in and out of one or more subnets. NACL can be applied to one or more subnets. However, each subnet must be associated with one and only one NACL.
+
+1. **Inbound**: refers to information coming into a network.
+
+![Inbound-traffic](/aws/devops-by-pravin-mishra/img/inbound-traffic_security_nacl.PNG)
+
+2. **Outbound**: refers to information going out of the network.
+
+![Outbound-traffic](/aws/devops-by-pravin-mishra/img/outbound-traffic_security_nacl.PNG)
+
+#### Difference between Security Group and NACL
+
+| Security Group                        | NACL                                |
+|---------------------------------------|-------------------------------------|
+| Operates at the instance level        | Operates at the subnet level        |
+| Stateful (State of allow traffic)     | Stateless                           |
+| Allows rules only                     | Allows both allow and deny rules    |
+| Can't delete a default security group | Can't delete default NACL           |
