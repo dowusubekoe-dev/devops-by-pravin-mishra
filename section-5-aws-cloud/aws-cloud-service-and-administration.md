@@ -158,16 +158,16 @@ Promised **99.99%** availability of objects per year.
 
 ### S3 Storage Classes
 
-| Storage Class                      | Description                                                                 | Use Case                                         | Durability | Availability         | Min Storage Duration |
-|------------------------------------|-----------------------------------------------------------------------------|--------------------------------------------------|------------|----------------------|----------------------|
-| S3 Standard                        | High durability, availability, and low latency                              | Frequently accessed data                         | 11 nines   | 99.99%               | None                 |
-| S3 Intelligent-Tiering             | Moves data between tiers based on access patterns                           | Variable access patterns                         | 11 nines   | 99.9% (frequent)     | 30 days              |
-| S3 Standard-IA (Infrequent Access) | Low-cost, high durability, retrieval fee applies                            | Long-lived but infrequently accessed data        | 11 nines   | 99.9%                | 30 days              |
-| S3 One Zone-IA                     | Stored in a single AZ                                                       | Non-critical infrequently accessed data          | 11 nines   | 99.5%                | 30 days              |
-| S3 Glacier Instant Retrieval       | Millisecond access, low cost                                                | Archive data needing quick retrieval             | 11 nines   | 99.9%                | 90 days              |
-| S3 Glacier Flexible Retrieval      | Minutes to hours retrieval                                                  | Long-term archives                               | 11 nines   | 99.99%               | 90 days              |
-| S3 Glacier Deep Archive            | Lowest cost, retrieval in hours                                             | Long-term archiving, compliance, backups         | 11 nines   | 99.99%               | 180 days             |
-| S3 Outposts                        | On-premises object storage on Outposts hardware                             | Local storage with S3 API                        | 11 nines   | Dependent on Outpost | None                 |
+| Storage Class                      | Description                                       | Use Case                                   | Durability | Availability         | Min Storage Duration |
+|------------------------------------|---------------------------------------------------|--------------------------------------------|------------|----------------------|----------------------|
+| S3 Standard                        | High durability, availability, and low latency    | Frequently accessed data                   | 11 nines   | 99.99%               | None                 |
+| S3 Intelligent-Tiering             | Moves data between tiers based on access patterns | Variable access patterns                   | 11 nines   | 99.9% (frequent)     | 30 days              |
+| S3 Standard-IA (Infrequent Access) | Low-cost, high durability, retrieval fee applies  | Long-lived but infrequently accessed data  | 11 nines   | 99.9%                | 30 days              |
+| S3 One Zone-IA                     | Stored in a single AZ                             | Non-critical infrequently accessed data    | 11 nines   | 99.5%                | 30 days              |
+| S3 Glacier Instant Retrieval       | Millisecond access, low cost                      | Archive data needing quick retrieval       | 11 nines   | 99.9%                | 90 days              |
+| S3 Glacier Flexible Retrieval      | Minutes to hours retrieval                        | Long-term archives                         | 11 nines   | 99.99%               | 90 days              |
+| S3 Glacier Deep Archive            | Lowest cost, retrieval in hours                   | Long-term archiving, compliance, backups   | 11 nines   | 99.99%               | 180 days             |
+| S3 Outposts                        | On-premises object storage on Outposts hardware   | Local storage with S3 API                  | 11 nines   | Dependent on Outpost | None                 |
 
 ---
 
@@ -249,17 +249,21 @@ A **NAT Gateway** allows instances in private subnets to connect to the internet
 
 ### Security Group & NACL
 
-A **Security Group** acts as a virtual firewall for your instance to control inbound and outbound traffic. It represents instance-level security and both inbound/outbound rules work independently. An instance can be associated with one or more security groups.
+A **Security Group** acts as a virtual firewall for your instance to control inbound and outbound traffic. 
+It represents instance-level security and both inbound/outbound rules work independently. 
+An instance can be associated with one or more security groups.
 
-A **Network Access Control List (NACL)** is an optional layer of security for your VPC that acts as a firewall for controlling traffic in and out of one or more subnets. NACL can be applied to one or more subnets. However, each subnet must be associated with one and only one NACL.
+A **Network Access Control List (NACL)** is an optional layer of security for your VPC that acts as a firewall for controlling traffic in and out of one or more subnets. 
+NACL can be applied to one or more subnets. However, each subnet must be associated with one and only one NACL.
 
 1. **Inbound**: refers to information coming into a network.
 
-![Inbound-traffic](/aws/devops-by-pravin-mishra/img/inbound-traffic_security_nacl.PNG)
+![Inbound-traffic](../img/inbound-traffic_security_nacl.PNG)
 
 2. **Outbound**: refers to information going out of the network.
 
-![Outbound-traffic](/aws/devops-by-pravin-mishra/img/outbound-traffic_security_nacl.PNG)
+![Outbound-traffic](../img/outbound-traffic_security_nacl.PNG)
+
 
 #### Difference between Security Group and NACL
 
@@ -272,7 +276,9 @@ A **Network Access Control List (NACL)** is an optional layer of security for yo
 
 ## Compute
 
-AWS **compute** is an on-demand computing service for running cloud-based applications. AWS provides computing resources like instances (**virtual machines**) and **containers**. AWS also provides **severless computing** to run applications where you do not need infrastructure setup or configuration.
+AWS **compute** is an on-demand computing service for running cloud-based applications. 
+AWS provides computing resources like instances (**virtual machines**) and **containers**. 
+AWS also provides **severless computing** to run applications where you do not need infrastructure setup or configuration.
 
 - **EC2 Instance**
 
