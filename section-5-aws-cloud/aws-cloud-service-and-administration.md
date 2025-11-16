@@ -269,3 +269,43 @@ A **Network Access Control List (NACL)** is an optional layer of security for yo
 | Stateful (State of allow traffic)     | Stateless                           |
 | Allows rules only                     | Allows both allow and deny rules    |
 | Can't delete a default security group | Can't delete default NACL           |
+
+## Compute
+
+AWS **compute** is an on-demand computing service for running cloud-based applications. AWS provides computing resources like instances (**virtual machines**) and **containers**. AWS also provides **severless computing** to run applications where you do not need infrastructure setup or configuration.
+
+- **EC2 Instance**
+
+- **ECS Container**
+
+- **Lambda**
+
+### Virtual Machine benefits
+
+1. **Scalability** – Easily scale resources up or down based on demand.
+2. **Cost Savingsy** – Pay only for the resources you use.
+3. **Flexibility** – Choose from a variety of instance types and configurations.
+4. **Agility and speed** - Quickly deploy and manage applications without physical hardware constraints.
+5. **Lowered downtime** - High availability and disaster recovery options.
+
+
+### Amazon EC2
+
+Amazon Elastic Compute Cloud (EC2) provides scalable computing capacity in the AWS cloud.
+You can launch virtual servers, configure security and networking, and manage storage.
+
+### EC2 Instance Types
+
+EC2 instance types are categorized based on their use cases:
+
+1. **General Purpose**: Balanced CPU, memory, and networking resources. Suitable for a variety of workloads.
+   - Examples: t3, m5
+2. **Compute Optimized**: High-performance processors for compute-intensive tasks.
+   - Examples: c5, c6g
+3. **Memory Optimized**: High memory capacity for memory-intensive applications.
+   - Examples: r5, x1e
+4. **Storage Optimized**: High, sequential read and write access to large datasets on local storage.
+   - Examples: i3, d2
+5. **Accelerated Computing**: Use hardware accelerators or GPUs for specific tasks.
+   - Examples: p3, g4dn
+
