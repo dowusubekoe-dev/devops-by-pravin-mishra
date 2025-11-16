@@ -83,3 +83,10 @@
    - **Target:** Select your **Internet Gateway (IGW)**.  
 
 2. Save changes.
+
+3. **Associate Subnet with Route Table**:  
+   - Go to the **Subnet Associations tab** → **Edit subnet associations**.  
+   - Select the subnet created earlier (e.g., `public-subnet-1`).  
+   - Click **Save associations**.
+
+---
