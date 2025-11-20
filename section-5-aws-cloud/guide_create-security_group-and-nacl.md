@@ -13,7 +13,7 @@
 5. Configure Inbound Rules:
     - Select the security group you created.
     - Go to the **Inbound rules** tab → **Edit inbound rules**.
-    - Add rules as needed (e.g., allow SSH, HTTP, HTTPS).
+    - Add rules as needed (e.g., allow SSH [Port 22], HTTP [Port 80], HTTPS [Port 443]).
 6. Save rules.
 ---
 
