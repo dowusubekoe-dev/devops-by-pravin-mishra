@@ -315,3 +315,65 @@ EC2 instance types are categorized based on their use cases:
 5. **Accelerated Computing**: Use hardware accelerators or GPUs for specific tasks.
    - Examples: p3, g4dn
 
+## Database
+
+### Data Source Types
+1. **Structured Data:** The data that has predefined data types and is stored in a specific format.
+
+      | SL. No. | First Name    | Last Number     | Phone No.         |
+      |---------|---------------|-----------------|-------------------|
+      | 1       | Ram           | Brainage        | +1 6489643002     |
+      | 2       | Derek         | Code            | +1 7579820921     |
+
+2. **Unstructured Data:** This data has an internal structure but does not contain a predefined data model.
+
+      - Text
+      - Phone text messages
+      - Videos
+      - Photos
+
+3. **Semi-structured Data:** Is a form of structured data.
+
+      ```json
+      {
+         "name": "John Doe",
+         "age": 30,
+         "isStudent": false,
+         "courses": ["Math", "Science"],
+         "address": {
+           "street": "123 Maple St",
+           "city": "Anytown"
+         },
+         "contact": null
+      }
+      ```
+
+### Database Technology
+
+The database is an organized collection of data so that it can be easily accessed and managed.
+
+### Relational Database
+
+An organized collection of related data. It is an organized collection all data sets which are described and related to one another.
+
+1. A table is a collection of data organized into a grid of rows and columns. 
+Each table stores data about a specific subject, like "Customers" or "Products".
+
+2. Columns, also called fields, define the attributes or characteristics of the data within a table.
+Each column has a name and a specific data type (e.g., text, number, date) that determines the kind of data it can store. 
+
+3. Records, or rows, represent a single entry or data item in a table.
+Each row contains a unique value for each column. For example, a single row in a "Customers" table would represent one specific customer.
+
+### Amazon RDS
+
+Amazon RDS is a relational database service that lets you set up, operate, and scale a relational database in the cloud.
+
+- Amazon RDS was designed to help you **reduce that database managment cost**.
+- It is a managed service that **automates** the provisioning of databases.
+- It supports **automated backup** and **point-in-time restore**.
+- Reads can be scaled by creating a **read replica** and improving the **read performance**.
+- RDS supports **Multi-AZ deployment** for High Availability
+- Maintenance window can be set up for OS patching and upgrade
+- RDS supports **vertical** and **horizontal** scaling.
+
