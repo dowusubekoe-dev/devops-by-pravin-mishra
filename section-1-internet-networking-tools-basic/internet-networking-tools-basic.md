@@ -137,6 +137,7 @@ Imagine you walk into a small diner:
 - The chef cooks it and hands it to you.
 
 ✅ **Pros:** Quick and direct.
+
 ❌ **Cons:** The kitchen gets crowded, and if customers mess up orders, it can cause chaos or accidents.
 
 ---
@@ -150,6 +151,7 @@ Imagine a proper restaurant:
 - The chef prepares the food and gives it to the **waiter**, who then serves it to you.
 
 ✅ **Pros:** Organized, scalable, and the kitchen is safe from customers.
+
 ❌ **Cons:** A bit more time and effort than going straight to the chef.
 
 📌 **Memory tip:**
