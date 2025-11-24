@@ -2,59 +2,59 @@
 
 ## Origins and History
 
-- `**1960s**` by the United States Department of Defense.
-- `**Communication**` system durind a nuclear attack.
+- **1960s** by the United States Department of Defense.
+- **Communication** system durind a nuclear attack.
 - New version, emails, videos, online transactions, and more.
-- `**Data transfer**` between `**two devices**`.
+- **Data transfer** between **two devices**.
 
-## Wnat is Network?
+## What is Network?
 
-- To allow the communicatio between two devices, we need `**Internet**` connection.
-- A device need to be connected to `**WiFi**` --> `**Router**` --> `**ISP**` (Connection of devices)
-- `**Network**` is a **collection of device** that can talk to each other
+- To allow the communicatio between two devices, we need **Internet** connection.
+- A device need to be connected to **WiFi** --> **Router** --> **ISP** (Connection of devices)
+- **Network** is a **collection of device** that can talk to each other
 - Communication is possible between two devices at different locations with the help of fibre-optics cables connected around the world.
-- `**Internet**` is a **network** of **networks**
-- Before data is transferred from one device to another, the `**Data**` is `**split into small packets**`.
-- `**Routes**` then directs the `**packets**` to different path to reach the other device.
-- Finally, at the `**destination**` the data is `**reassembled**`
-- The whole process involving `**data spliting**`, `**routing of packets**` and `**reassembling of data at destination**`is termed as `**Packet Switching**`
+- **Internet** is a **network** of **networks**
+- Before data is transferred from one device to another, the **Data** is **split into small packets**.
+- **Routes** then directs the **packets** to different path to reach the other device.
+- Finally, at the **destination** the data is **reassembled**.
+- The whole process involving **data spliting**, **routing of packets** and **reassembling of data at destination** is termed as **Packet Switching**.
   
 ### Rules that govern data transfer
 
-- `**IP Address**` is a unique identifier for each device on the network.
-- `**Protocols**` are a set of rules that govern how data is transmitted over a network.
-- `**Internet Protocol (IP)**` handles addressing and routing.
-- `**Transmission Control Protocol (TCP)**` ensures data is `**delivered correctly**` and in `**order**`.
-- `**UDP**` is a connectionless protocol that allows data to be sent without establishing a connection first.
-- `**HTTP**` is the foundation of data communication on the web.
-- `**HTTPS (Hypertext Transfer Protocol Secure)**` is a secure version of HTTP, the protocol used for communication between a web browser and a website.
+- **IP Address** is a unique identifier for each device on the network.
+- **Protocols** are a set of rules that govern how data is transmitted over a network.
+- **Internet Protocol (IP)** handles addressing and routing.
+- **Transmission Control Protocol (TCP)** ensures data is **delivered correctly** and in **order**.
+- **UDP** is a connectionless protocol that allows data to be sent without establishing a connection first.
+- **HTTP** is the foundation of data communication on the web.
+- **HTTPS (Hypertext Transfer Protocol Secure)** is a secure version of HTTP, the protocol used for communication between a web browser and a website.
 
 ## Application Architecture & Stack
 
-- `**Client-Server Architecture**` is a model where a client requests services from a server.
+- **Client-Server Architecture** is a model where a client requests services from a server.
 
-- `**Two-Tier Architecture**` consists of a `**client/frontend**` and a `**server/database**`.
+- **Two-Tier Architecture** consists of a **client/frontend** and a **server/database**.
 
 ![Two-Tier-App-Stack](/img/two-tier-application.PNG)
 
-- `**Three-Tier Architecture**` adds a `**backend layer**` between the `**client/frontend**` and `**server/database**`.
+- **Three-Tier Architecture** adds a **backend layer** between the **client/frontend** and **server/database**.
 
 ![Three-Tier-App-Stack](/img/three-tier-application.PNG)
 
-- `**Microservices Architecture**` breaks down an application into smaller, independent services that can be developed, deployed, and scaled independently.
+- **Microservices Architecture** breaks down an application into smaller, independent services that can be developed, deployed, and scaled independently.
 
 ![Microservices-App-Stack](/img/microservices-application.PNG)
 
 ### Technology Stack
 
-`**Frontend**`
+**Frontend**
 
 - Next.js (React framework for server-side rendering and routing)
 - Tailwind CSS (For styling)
 - Axios (for making API requests)
 - React Context API (for global state management)
 
-`**Backend**`
+**Backend**
 
 - Node.js & Express.js (For API development)
 - MySQL & Sequelize (For database management)
@@ -62,7 +62,7 @@
 - bcrypt.js (For password hashing)
 - CORS (for cross-origin request handling)
 
-`**Database**`
+**Database**
 
 - MySQL (Relational database management system)
 
@@ -80,37 +80,37 @@ For example:
 
 ### Domain Name
 
-- A **domain name** is the `**human-readable address**` of a website.
+- A **domain name** is the **human-readable address** of a website.
 - Helps with Branding, Professionalism and Trust.
 - `**Domain Registrar: GoDaddy, Bluehost, AWS ROute 53 (for advanced users)
 
 ### Domain Name System
 
-- The `**Domain Name System (DNS)**` translates domain names into IP addresses. The `**phonebook**` of the `**internet**`
-- `**DNS Resolution Process**` is the process of converting a domain name into an IP address.
+- The **Domain Name System (DNS)** translates domain names into IP addresses. The **phonebook** of the **internet**.
+- **DNS Resolution Process** is the process of converting a domain name into an IP address.
 
-`**User --> Cache --> Resolver --> Root --> TLD --> Server --> IP**`
+**User --> Cache --> Resolver --> Root --> TLD --> Server --> IP**
 
-    - User enters website address
-    - Check cache
-    - Ask DNS Resolver (ISP)
-    - Go to Root Server if DNS Resolver cannot find the ip address
-    - Go to TLD (Top Level Domain Name Server) if Root Server is not able to find the ip address. A `**.com**` is the TLD.
-    - Get IP address from an `**alternative server**` if the ip address can not be found in TLD.
-    - Connects to the websites
+  - User enters website address
+  - Check cache
+  - Ask DNS Resolver (ISP)
+  - Go to Root Server if DNS Resolver cannot find the ip address
+  - Go to TLD (Top Level Domain Name Server) if Root Server is not able to find the ip address. A `.com` is the TLD.
+  - Get IP address from an **alternative server** if the ip address can not be found in TLD.
+  - Connects to the websites
 
 ### DNS Record Types
 
-- `**A Record**`: Maps a domain name to an IPv4 address.
-- `**AAAA Record**`: Maps a domain name to an IPv6 address.
-- `**CNAME Record**`: Maps a domain name to another domain name.
-- `**MX Record**`: Specifies the mail servers for a domain.
-- `**TXT Record**`: Used to store text information for a domain.
+- **A Record**: Maps a domain name to an IPv4 address.
+- **AAAA Record**: Maps a domain name to an IPv6 address.
+- **CNAME Record**: Maps a domain name to another domain name.
+- **MX Record**: Specifies the mail servers for a domain.
+- **TXT Record**: Used to store text information for a domain.
 
 ## How to Use ChatGPT
 
-- `**ChatGPT**` is a powerful AI tool that can help you with various tasks.
-- `**Use Cases**`:
+- **ChatGPT** is a powerful AI tool that can help you with various tasks.
+- **Use Cases**:
   - Code generation and debugging
   - Writing documentation
   - Answering technical questions
@@ -157,7 +157,7 @@ Imagine a proper restaurant:
 - **Two-Tier** = You’re in the kitchen yourself.
 - **Three-Tier** = You place an order through a middleman.
 
-- `**Tips for Effective Use**`:
+- **Tips for Effective Use**:
   - Be specific in your questions
   - Provide context when necessary
   - Ask follow-up questions for clarification
