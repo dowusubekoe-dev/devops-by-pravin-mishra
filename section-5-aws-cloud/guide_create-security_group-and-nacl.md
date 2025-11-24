@@ -19,6 +19,7 @@
 ---
 
 ## Guidelines: Create Network ACL (NACL)
+
 1. Go to **VPC Dashboard**.
     In the AWS Console, search for **VPC** and open the **VPC Dashboard**.
 2. Select **Network ACLs**.
